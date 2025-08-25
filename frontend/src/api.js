@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://email-analyzer-2nwi.onrender.com/',
+  baseURL: 'https://email-analyzer-x6qz.onrender.com',
 });
 
 export default API;

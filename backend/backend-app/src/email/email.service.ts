@@ -11,7 +11,10 @@ export class EmailService {
   ) {}
 
   private unfoldHeaders(raw: string): string {
-    return raw.replace(/\r?\n[ \t]+/g, ' ');
+    if (!raw || typeof raw !== 'string') {
+      return '';
+    }
+    return raw.replace(/\r\n\s+/g, ' ');
   }
 
   private extractReceivingChain(headers: string): ReceivingHop[] {
