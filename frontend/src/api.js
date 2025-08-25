@@ -1,7 +1,7 @@
-import axios from "axios";
+import axios from 'axios';
 
 const API = axios.create({
-  baseURL: "http://localhost:4000", // ⚡ Deploy hone ke baad Render backend ka URL daalna
+  baseURL: 'https://email-analyzer-2nwi.onrender.com/',
 });
 
 export default API;
